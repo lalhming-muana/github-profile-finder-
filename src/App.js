@@ -1,7 +1,8 @@
 import './App.css';
 import Navbar from './components/layout/Navbar'
 import React, {Component, Fragment} from 'react';
-import UserItem from './components/users/UserItem';
+import Users from './components/users/Users';
+import UserItems from './components/users/UserItem'
 
 class App extends React.Component {
   
@@ -10,8 +11,12 @@ class App extends React.Component {
     
     return (
       <div className="App">
-        <Navbar />   
-        <UserItem />   
+        <Navbar /> 
+        <div className="container">
+           <Users />
+          
+        </div>  
+           
       </div>
        );
   }
